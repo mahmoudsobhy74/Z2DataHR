@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MCD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation=""
+     formType="Distribute"
+     declarationType="All"
+     ipcStandard="1752-2"
+     version="1.1">
+   <ProductID manufacturerItemName="Integrated Circuit"
+              manufacturerItemNumber="5962-0050901QFA"
+              manufacturingSite="Ext-Mfg"
+              effectiveDate="2021-12-18"/>
+   <PIP pipVersion="D11.00.00"
+        tpirVersion="01.00"
+        pipIdentifier="2A13"
+        fileType="pdf">
+      <ResponseInternal identity="254325" source="Texas Instruments Inc"/>
+   </PIP>
+   <Response date="2021-12-19" fieldLock="false" comments="ti.com/support">
+      <Authorizer name="Randy Rath"
+                  title="Environmental Management"
+                  phone="ti.com/support"
+                  email="ti.com/support"/>
+      <Supplier name="Texas Instruments Inc">
+         <UniqueID identity="00-732-1904" authority="DUNS"/>
+      </Supplier>
+      <Contact name="Customer Support Center"
+               phone="ti.com/support"
+               email="ti.com/support"/>
+      <Product unitVolume="Each" partURL="http://www.ti.com/product/SN54LVC257A">
+         <Amount weight="933.592" unitOfMeasure="mg"/>
+         <RoHSDeclaration rohsDeclaration="2 - Item(s) contains RoHS restricted substances above the limits per the definition above and is not under exemption"
+                          legalDef="Please indicate whether any homogeneous material (as defined by the RoHS Directive, EU 2002/95/EC and implemented by the laws of the European Union member states) of the part identified on this form contains lead, mercury, cadmium, hexavalent chromium, polybrominated biphenyls and/or polybrominated diphenyl ethers (each a RoHS restricted substance) in excess of the applicable quantity limit identified above. If a homogeneous material within the part contains a RoHS restricted substance in excess of an applicable quantity limit, please indicate below which, if any, RoHS exemption you believe may apply. If the part is an assembly with lower level components, the declaration shall encompass all such components. Supplier certifies that it gathered the information it provides in this form using appropriate methods to ensure its accuracy and that such information is true and correct to the best of its knowledge and belief, as of the date that Supplier completes this form. Supplier acknowledges that Company will rely on this certification in determining the compliance of its products with European Union member state laws that implement the RoHS Directive. Company acknowledges that Supplier may have relied on information provided by others in completing this form, and that Supplier may not have independently verified such information. However, in situations where Supplier has not independently verified information provided by others, Supplier agrees that, at a minimum, its suppliers have provided certifications regarding their contributions to the part, and those certifications are at least as comprehensive as the certification in this paragraph. If the Company and the Supplier enter into a written agreement with respect to the identified part,the terms and conditions of that agreement, including any warranty rights and/or remedies provided as part of that agreement, will be the sole and exclusive source of the Supplier's liability and the Company's remedies for issues that arise regarding information the Supplier provides in this form. In the absence of such written agreement, the warranty rights and/or remedies of Supplier's Standard Terms and Conditions of Sale applicable to such part shall apply."
+                          legalType="Detailed"/>
+         <MfgInfo gridArrayMaterial="SNPB"
+                  terminalBaseAlloy="SNPB"
+                  mslRating=""
+                  peakProcessingTemp=""
+                  maxTime=""
+                  numberProcessingCycles=""/>
+         <SubItem>
+            <HomogeneousMaterial name="Base">
+               <Amount weight="162.23" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="3.001255" unitOfMeasure="mg"/>
+                  <Substance name="Ferric Oxide" cas="1309-37-1">
+                     <Amount weight="3.001255" unitOfMeasure="mg" ppm="18500"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="150.79279" unitOfMeasure="mg"/>
+                  <Substance name="Aluminum Oxide" cas="1344-28-1">
+                     <Amount weight="143.42754" unitOfMeasure="mg" ppm="884100"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="150.79279" unitOfMeasure="mg"/>
+                  <Substance name="Silicon Dioxide" cas="7631-86-9">
+                     <Amount weight="4.363987" unitOfMeasure="mg" ppm="26900"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="150.79279" unitOfMeasure="mg"/>
+                  <Substance name="Titanium Oxide" cas="13463-67-7">
+                     <Amount weight="3.001255" unitOfMeasure="mg" ppm="18500"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="8.43596" unitOfMeasure="mg"/>
+                  <Substance name="Chromium Oxide" cas="1308-38-9">
+                     <Amount weight="2.59568" unitOfMeasure="mg" ppm="16000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="8.43596" unitOfMeasure="mg"/>
+                  <Substance name="Manganese Dioxide" cas="1313-13-9">
+                     <Amount weight="5.84028" unitOfMeasure="mg" ppm="36000"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Bond Wire">
+               <Amount weight="0.079589" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Aluminum and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="0.078898" unitOfMeasure="mg"/>
+                  <Substance name="Aluminum" cas="7429-90-5">
+                     <Amount weight="0.078898" unitOfMeasure="mg" ppm="991318"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="0.000003" unitOfMeasure="mg"/>
+                  <Substance name="Copper" cas="7440-50-8">
+                     <Amount weight="0.000001" unitOfMeasure="mg" ppm="13"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="0.000003" unitOfMeasure="mg"/>
+                  <Substance name="Iron" cas="7439-89-6">
+                     <Amount weight="0.000002" unitOfMeasure="mg" ppm="25"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="0.000686" unitOfMeasure="mg"/>
+                  <Substance name="Silicon" cas="7440-21-3">
+                     <Amount weight="0.000686" unitOfMeasure="mg" ppm="8619"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Precious Metals" jigLevel="Supplier">
+                  <Amount weight="0.000002" unitOfMeasure="mg"/>
+                  <Substance name="Silver" cas="7440-22-4">
+                     <Amount weight="0.000002" unitOfMeasure="mg" ppm="25"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Die Attach Adhesive">
+               <Amount weight="0.078465" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="0.01177" unitOfMeasure="mg"/>
+                  <Substance name="Lead Borate Glass" cas="65997-18-4">
+                     <Amount weight="0.01177" unitOfMeasure="mg" ppm="150003"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Plastics and Rubber" jigLevel="Supplier">
+                  <Amount weight="0.003923" unitOfMeasure="mg"/>
+                  <Substance name="Other Filler" cas="">
+                     <Amount weight="0.003923" unitOfMeasure="mg" ppm="49997"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Precious Metals" jigLevel="Supplier">
+                  <Amount weight="0.062772" unitOfMeasure="mg"/>
+                  <Substance name="Silver" cas="7440-22-4">
+                     <Amount weight="0.062772" unitOfMeasure="mg" ppm="800000"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Lead Frame">
+               <Amount weight="488" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Aluminum and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="0.488" unitOfMeasure="mg"/>
+                  <Substance name="Aluminum" cas="7429-90-5">
+                     <Amount weight="0.488" unitOfMeasure="mg" ppm="1000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="280.4731" unitOfMeasure="mg"/>
+                  <Substance name="Iron" cas="7439-89-6">
+                     <Amount weight="280.35114" unitOfMeasure="mg" ppm="574490"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="280.4731" unitOfMeasure="mg"/>
+                  <Substance name="Phosphorus" cas="7723-14-0">
+                     <Amount weight="0.122" unitOfMeasure="mg" ppm="250"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Nickel and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="200.08" unitOfMeasure="mg"/>
+                  <Substance name="Nickel" cas="7440-02-0">
+                     <Amount weight="200.08" unitOfMeasure="mg" ppm="410000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="1.586" unitOfMeasure="mg"/>
+                  <Substance name="Silicon" cas="7440-21-3">
+                     <Amount weight="1.464" unitOfMeasure="mg" ppm="3000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="1.586" unitOfMeasure="mg"/>
+                  <Substance name="Sulfur" cas="7704-34-9">
+                     <Amount weight="0.122" unitOfMeasure="mg" ppm="250"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="5.12888" unitOfMeasure="mg"/>
+                  <Substance name="Chromium" cas="7440-47-3">
+                     <Amount weight="1.22" unitOfMeasure="mg" ppm="2500"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="5.12888" unitOfMeasure="mg"/>
+                  <Substance name="Cobalt" cas="7440-48-4">
+                     <Amount weight="0.00488" unitOfMeasure="mg" ppm="10"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="5.12888" unitOfMeasure="mg"/>
+                  <Substance name="Manganese" cas="7439-96-5">
+                     <Amount weight="3.904" unitOfMeasure="mg" ppm="8000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Plastics and Rubber" jigLevel="Supplier">
+                  <Amount weight="0.244" unitOfMeasure="mg"/>
+                  <Substance name="Carbon" cas="7440-44-0">
+                     <Amount weight="0.244" unitOfMeasure="mg" ppm="500"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Lead Frame Plating">
+               <Amount weight="4.88" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="4.88" unitOfMeasure="mg"/>
+                  <Substance name="Lead" cas="7439-92-1">
+                     <Amount weight="1.8056" unitOfMeasure="mg" ppm="370000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="4.88" unitOfMeasure="mg"/>
+                  <Substance name="Tin" cas="7440-31-5">
+                     <Amount weight="3.0744" unitOfMeasure="mg" ppm="630000"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Lid">
+               <Amount weight="166.21" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Copper and Its Alloys" jigLevel="Supplier">
+                  <Amount weight="3.074885" unitOfMeasure="mg"/>
+                  <Substance name="Ferric Oxide" cas="1309-37-1">
+                     <Amount weight="3.074885" unitOfMeasure="mg" ppm="18500"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="154.49219" unitOfMeasure="mg"/>
+                  <Substance name="Aluminum Oxide" cas="1344-28-1">
+                     <Amount weight="146.94626" unitOfMeasure="mg" ppm="884100"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="154.49219" unitOfMeasure="mg"/>
+                  <Substance name="Silicon Dioxide" cas="7631-86-9">
+                     <Amount weight="4.471049" unitOfMeasure="mg" ppm="26900"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Inorganic Materials" jigLevel="Supplier">
+                  <Amount weight="154.49219" unitOfMeasure="mg"/>
+                  <Substance name="Titanium Oxide" cas="13463-67-7">
+                     <Amount weight="3.074885" unitOfMeasure="mg" ppm="18500"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="8.64292" unitOfMeasure="mg"/>
+                  <Substance name="Chromium Oxide" cas="1308-38-9">
+                     <Amount weight="2.65936" unitOfMeasure="mg" ppm="16000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="8.64292" unitOfMeasure="mg"/>
+                  <Substance name="Manganese Dioxide" cas="1313-13-9">
+                     <Amount weight="5.98356" unitOfMeasure="mg" ppm="36000"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Lid - Seal">
+               <Amount weight="111.27" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Glass Frit" jigLevel="Supplier">
+                  <Amount weight="50.0715" unitOfMeasure="mg"/>
+                  <Substance name="Iron Cobalt Chromite Black Spinel" cas="68186-97-0">
+                     <Amount weight="0.55635" unitOfMeasure="mg" ppm="5000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Glass Frit" jigLevel="Supplier">
+                  <Amount weight="50.0715" unitOfMeasure="mg"/>
+                  <Substance name="Other (Glass w/out Declarable Substance)" cas="NA">
+                     <Amount weight="5.00715" unitOfMeasure="mg" ppm="45000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Glass Frit" jigLevel="Supplier">
+                  <Amount weight="50.0715" unitOfMeasure="mg"/>
+                  <Substance name="Silicate Acid, Zinc Salt (4:3)" cas="96906-37-5">
+                     <Amount weight="16.6905" unitOfMeasure="mg" ppm="150000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Glass Frit" jigLevel="Supplier">
+                  <Amount weight="50.0715" unitOfMeasure="mg"/>
+                  <Substance name="Zinc Stannate" cas="12036-37-2">
+                     <Amount weight="27.8175" unitOfMeasure="mg" ppm="250000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="61.1985" unitOfMeasure="mg"/>
+                  <Substance name="Boron Oxide" cas="1303-86-2">
+                     <Amount weight="5.5635" unitOfMeasure="mg" ppm="50000"/>
+                  </Substance>
+               </SubstanceCategory>
+               <SubstanceCategory name="Other Nonferrous Metals and Alloys" jigLevel="Supplier">
+                  <Amount weight="61.1985" unitOfMeasure="mg"/>
+                  <Substance name="Lead Monoxide" cas="1317-36-8">
+                     <Amount weight="55.635" unitOfMeasure="mg" ppm="500000"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+            <HomogeneousMaterial name="Semiconductor Device">
+               <Amount weight="0.843953" unitOfMeasure="mg"/>
+               <SubstanceCategory name="Ceramics / Glass" jigLevel="Supplier">
+                  <Amount weight="0.843953" unitOfMeasure="mg"/>
+                  <Substance name="Doped Silicon" cas="7440-21-3">
+                     <Amount weight="0.843953" unitOfMeasure="mg" ppm="1.0E6"/>
+                  </Substance>
+               </SubstanceCategory>
+            </HomogeneousMaterial>
+         </SubItem>
+      </Product>
+   </Response>
+</MCD>

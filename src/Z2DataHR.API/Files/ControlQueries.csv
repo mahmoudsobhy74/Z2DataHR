@@ -1,0 +1,177 @@
+engineName,action,actionStatus,DBName,collectionName,connectionString,filter,updateDefination,queryString
+Newark,Export,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}",,"[{$match: {""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark,Export,Pending,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""1"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark,Export,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""3"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark,Export,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""4"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark,Remove,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}",,[]
+Newark,Remove,Pending,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""2""}",,[]
+Newark,Remove,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}",,[]
+Newark,Remove,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}",,[]
+Newark,Reset,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Newark,Reset,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Newark,Reset,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow,Export,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}",,"[{$match: {""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow,Export,Pending,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""1"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow,Export,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""3"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow,Export,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}",,"[{$match: {""Status"" : ""4"",""Priority"" : ""2""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow,Remove,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}",,[]
+Arrow,Remove,Pending,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""2""}",,[]
+Arrow,Remove,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}",,[]
+Arrow,Remove,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}",,[]
+Arrow,Reset,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow,Reset,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow,Reset,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""2""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Farnell,Export,All,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,{},,"[{$match: {}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Farnell,Export,Pending,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,"[{$match: {Status:'1'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Farnell,Export,Success,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,"[{$match: {Status:'3'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Farnell,Export,Failed,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,"[{$match: {Status:'4'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Farnell,Remove,All,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,{},,[]
+Farnell,Remove,Pending,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,[]
+Farnell,Remove,Success,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,[]
+Farnell,Remove,Failed,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,[]
+Farnell,Reset,All,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,{},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Farnell,Reset,Success,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Farnell,Reset,Failed,Aggregator,Farnell_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Oemsecret,Export,All,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,{},,"[{$match: {}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Oemsecret,Export,Pending,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,"[{$match: {Status:'1'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Oemsecret,Export,Success,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,"[{$match: {Status:'3'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Oemsecret,Export,Failed,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,"[{$match: {Status:'4'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Oemsecret,Remove,All,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,{},,[]
+Oemsecret,Remove,Pending,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,[]
+Oemsecret,Remove,Success,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,[]
+Oemsecret,Remove,Failed,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,[]
+Oemsecret,Reset,All,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,{},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Oemsecret,Reset,Success,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Oemsecret,Reset,Failed,Aggregator,Oemsecrets_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow_HighRunner,Export,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}",,"[{$match: {""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow_HighRunner,Export,Pending,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""1"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow_HighRunner,Export,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""3"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow_HighRunner,Export,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""4"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Arrow_HighRunner,Remove,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}",,[]
+Arrow_HighRunner,Remove,Pending,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""1""}",,[]
+Arrow_HighRunner,Remove,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}",,[]
+Arrow_HighRunner,Remove,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}",,[]
+Arrow_HighRunner,Reset,All,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow_HighRunner,Reset,Success,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Arrow_HighRunner,Reset,Failed,Aggregator,Arrow_Table_Page_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Newark_HighRunner,Export,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}",,"[{$match: {""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark_HighRunner,Export,Pending,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""1"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark_HighRunner,Export,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""3"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark_HighRunner,Export,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}",,"[{$match: {""Status"" : ""4"",""Priority"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Newark_HighRunner,Remove,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}",,[]
+Newark_HighRunner,Remove,Pending,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""1"",""Priority"" : ""1""}",,[]
+Newark_HighRunner,Remove,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}",,[]
+Newark_HighRunner,Remove,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}",,[]
+Newark_HighRunner,Reset,All,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Newark_HighRunner,Reset,Success,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""3"",""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Newark_HighRunner,Reset,Failed,Aggregator,Newark_Output,mongodb://192.168.7.93:27017,"{""Status"" : ""4"",""Priority"" : ""1""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+CSParts FC,Export,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]}}",,"[{$match: {""Server"":{$in:[""104""]}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+CSParts FC,Export,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""1""}",,"[{$match: {""Server"":{$in:[""104""]},""FC_Status"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+CSParts FC,Export,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""3""}",,"[{$match: {""Server"":{$in:[""104""]},""FC_Status"" : ""3""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+CSParts FC,Export,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""4""}",,"[{$match: {""Server"":{$in:[""104""]},""FC_Status"" : ""4""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+CSParts FC,Remove,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]}}",,[]
+CSParts FC,Remove,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""1""}",,[]
+CSParts FC,Remove,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""3""}",,[]
+CSParts FC,Remove,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""4""}",,[]
+CSParts FC,Reset,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]}}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+CSParts FC,Reset,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""3""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+CSParts FC,Reset,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""104""]},""FC_Status"" : ""4""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+DKPartial FC,Export,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]}}",,"[{$match:{""Server"":{$in:[""106"",""105""]}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+DKPartial FC,Export,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""1""}",,"[{$match: {""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+DKPartial FC,Export,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""3""}",,"[{$match:{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""3""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+DKPartial FC,Export,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""4""}",,"[{$match:{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""4""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+DKPartial FC,Remove,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]}}",,[]
+DKPartial FC,Remove,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""1""}",,[]
+DKPartial FC,Remove,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""3""}",,[]
+DKPartial FC,Remove,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""4""}",,[]
+DKPartial FC,Reset,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]}}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+DKPartial FC,Reset,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""3""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+DKPartial FC,Reset,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""106"",""105""]},""FC_Status"" : ""4""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+Mouser FC,Export,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]}}",,"[{$match: {""Server"":{$in:[""107"",""108""]}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser FC,Export,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""1""}",,"[{$match:{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser FC,Export,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""3""}",,"[{$match: {""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""3""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser FC,Export,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""4""}",,"[{$match: {""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""4""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser FC,Remove,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]}}",,[]
+Mouser FC,Remove,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""1""}",,[]
+Mouser FC,Remove,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""3""}",,[]
+Mouser FC,Remove,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""4""}",,[]
+Mouser FC,Reset,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]}}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+Mouser FC,Reset,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""3""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+Mouser FC,Reset,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,"{""Server"":{$in:[""107"",""108""]},""FC_Status"" : ""4""}","{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+Mouser US,Export,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar""}",,"[{$match: {""Domain"":""Dollar""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser US,Export,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""1""}",,"[{$match: {""Domain"":""Dollar"",""Status"":""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser US,Export,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""3""}",,"[{$match: {""Domain"":""Dollar"",""Status"":""3""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser US,Export,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""4""}",,"[{$match: {""Domain"":""Dollar"",""Status"":""4""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser US,Remove,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar""}",,[]
+Mouser US,Remove,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""1""}",,[]
+Mouser US,Remove,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""3""}",,[]
+Mouser US,Remove,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""4""}",,[]
+Mouser US,Reset,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser US,Reset,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser US,Reset,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""Dollar"",""Status"":""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser EU,Export,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU""}",,"[{$match:{""Domain"":""EU""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser EU,Export,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""1""}",,"[{$match: {""Domain"":""EU"",""Status"":""1""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser EU,Export,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""3""}",,"[{$match: {""Domain"":""EU"",""Status"":""3""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser EU,Export,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""4""}",,"[{$match: {""Domain"":""EU"",""Status"":""4""}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser EU,Remove,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU""}",,[]
+Mouser EU,Remove,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""1""}",,[]
+Mouser EU,Remove,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""3""}",,[]
+Mouser EU,Remove,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""4""}",,[]
+Mouser EU,Reset,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser EU,Reset,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser EU,Reset,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{""Domain"":""EU"",""Status"":""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser_HighRuuners,Export,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,{'ProxyIP' : { $in:['9']}},,"[{$match: {'ProxyIP' : { $in:['9']}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser_HighRuuners,Export,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'1','ProxyIP' : { $in:['9']}}",,"[{$match: {Status:'1','ProxyIP' : { $in:['9']}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser_HighRuuners,Export,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'3','ProxyIP' : { $in:['9']}}",,"[{$match: {Status:'3','ProxyIP' : { $in:['9']}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser_HighRuuners,Export,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'4','ProxyIP' : { $in:['9']}}",,"[{$match: {Status:'4','ProxyIP' : { $in:['9']}}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Mouser_HighRuuners,Remove,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,{'ProxyIP' : { $in:['9']}},,[]
+Mouser_HighRuuners,Remove,Pending,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'1','ProxyIP' : { $in:['9']}}",,[]
+Mouser_HighRuuners,Remove,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'3','ProxyIP' : { $in:['9']}}",,[]
+Mouser_HighRuuners,Remove,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'4','ProxyIP' : { $in:['9']}}",,[]
+Mouser_HighRuuners,Reset,All,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,{'ProxyIP' : { $in:['9']}},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser_HighRuuners,Reset,Success,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'3','ProxyIP' : { $in:['9']}}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Mouser_HighRuuners,Reset,Failed,Aggregator,MouserNewModule,mongodb://192.168.7.93:27017,"{Status:'4','ProxyIP' : { $in:['9']}}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Texas,Export,All,Aggregator,TI_Input,mongodb://192.168.7.93:27017,{},,"[{$match: {}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Texas,Export,Pending,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,"[{$match: {Status:'1'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Texas,Export,Success,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,"[{$match: {Status:'3'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Texas,Export,Failed,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,"[{$match: {Status:'4'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+Texas,Remove,All,Aggregator,TI_Input,mongodb://192.168.7.93:27017,{},,[]
+Texas,Remove,Pending,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,[]
+Texas,Remove,Success,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,[]
+Texas,Remove,Failed,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,[]
+Texas,Reset,All,Aggregator,TI_Input,mongodb://192.168.7.93:27017,{},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Texas,Reset,Success,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+Texas,Reset,Failed,Aggregator,TI_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_Germany,Export,All,Aggregator,RS_Input,mongodb://192.168.7.93:27017,{},,"[{$match: {}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_Germany,Export,Pending,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,"[{$match: {Status:'1'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_Germany,Export,Success,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,"[{$match: {Status:'3'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_Germany,Export,Failed,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,"[{$match: {Status:'4'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_Germany,Remove,All,Aggregator,RS_Input,mongodb://192.168.7.93:27017,{},,[]
+RS_Germany,Remove,Pending,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,[]
+RS_Germany,Remove,Success,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,[]
+RS_Germany,Remove,Failed,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,[]
+RS_Germany,Reset,All,Aggregator,RS_Input,mongodb://192.168.7.93:27017,{},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_Germany,Reset,Success,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_Germany,Reset,Failed,Aggregator,RS_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_UK,Export,All,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,{},,"[{$match: {}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_UK,Export,Pending,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,"[{$match: {Status:'1'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_UK,Export,Success,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,"[{$match: {Status:'3'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_UK,Export,Failed,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,"[{$match: {Status:'4'}}, {$skip: SK}, {$limit: LI}, {$project: {_id:0}}]"
+RS_UK,Remove,All,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,{},,[]
+RS_UK,Remove,Pending,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""1""}",,[]
+RS_UK,Remove,Success,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}",,[]
+RS_UK,Remove,Failed,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}",,[]
+RS_UK,Reset,All,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,{},"{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_UK,Reset,Success,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""3""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+RS_UK,Reset,Failed,Aggregator,RS_UK_Input,mongodb://192.168.7.93:27017,"{""Status"" : ""4""}","{$set:{ ""Status"" : ""1"",""Exception"":""""}}",[]
+NonStock FC,Export,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Export,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Export,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Export,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Remove,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Remove,Pending,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Remove,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Remove,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,,[]
+NonStock FC,Reset,All,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,"{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+NonStock FC,Reset,Success,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,"{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]
+NonStock FC,Reset,Failed,Aggregator,HighRunnersPartials,mongodb://192.168.7.93:27017,,"{$set:{ ""FC_Status"" : ""1"",""Exception"":"""",""FC_Exception"":""""}}",[]

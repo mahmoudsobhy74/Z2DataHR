@@ -78,8 +78,6 @@ namespace Z2DataHR.Application.Services
                             Insurance_Nubmer = Convert.ToInt32(item["Insurance_Nubmer"]),
                             Graduation_Year = Convert.ToInt32(item["Graduation_year"]),
 
-
-
                         };
                         emp.Age = year - emp.Birth_Date.Year;
 
@@ -91,6 +89,7 @@ namespace Z2DataHR.Application.Services
                             nMonth = nMonth + 12;
                             nYear = nYear - 1;
                         }
+
                         int nDay = currentDate.Day - emp.HiringDate.Day;
 
                         if (nDay < 0)
